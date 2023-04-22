@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.text.Editable;
 import android.text.Html;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -29,23 +31,62 @@ public class RegisterActivity extends AppCompatActivity {
         binding.btnRegistrate.setOnClickListener(view -> {
             finish();
         });
+        binding.btnIniciarSesion.setOnClickListener(view -> {
+            finish();
+        });
         habilitarBtn();
 
        binding.inputNumero.setOnKeyListener((view, i, keyEvent) -> {
             habilitarBtn();
             return false;
         });
-        binding.inputContra.setOnKeyListener((view, i, keyEvent) -> {
-            habilitarBtn();
-            return false;
+        binding.inputContra.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                habilitarBtn();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
         });
-        binding.inputCorreo.setOnKeyListener((view, i, keyEvent) -> {
-            habilitarBtn();
-            return false;
+        binding.inputCorreo.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                habilitarBtn();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
         });
-        binding.inputNombre.setOnKeyListener((view, i, keyEvent) -> {
-            habilitarBtn();
-            return false;
+        binding.inputNombre.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                habilitarBtn();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
         });
         binding.checkBox1.setOnClickListener(view -> {
             habilitarBtn();
@@ -55,6 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
    private void habilitarBtn(){
+
        if(!binding.inputNombre.getText().toString().isEmpty()&&!binding.inputContra.getText().toString().isEmpty()&&!binding.inputCorreo.getText().toString().isEmpty()
                &&!binding.inputNumero.getText().toString().isEmpty()&&binding.checkBox1.isChecked()&&binding.checkBox2.isChecked()){
            binding.btnRegistrate.setClickable(true);//Por defecto
