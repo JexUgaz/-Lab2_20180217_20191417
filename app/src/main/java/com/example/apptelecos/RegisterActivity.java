@@ -23,6 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().hide();
         binding.textPolitica.setText(Html.fromHtml(getResources().getString(R.string.register_msg)));
         binding.textTerminos.setText(Html.fromHtml(getResources().getString(R.string.resgister_msg1)));
 
