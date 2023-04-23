@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="309dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Elije tu asiento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#f7f9f8"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Preventa-Mezzanine Lateral Izquierda"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="186dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Fila 1 a 5"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvcosto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="S/ 30.00"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="35dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#f7f9f8"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Preventa-Mezzanine Lateral Izquierda"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="186dp" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Fila 5 a 10"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvcosto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="S/ 26.00"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="35dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#f7f9f8"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Preventa-Mezzanine Lateral Izquierda"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="186dp" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Fila 11 a 15"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvcosto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="S/ 23.00"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="35dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="#6abda6"
+        android:text="Selecciona tu asiento"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
