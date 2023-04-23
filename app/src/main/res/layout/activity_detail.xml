@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".detail.Detail">
-
+    tools:context=".DetailActivity">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -37,7 +36,7 @@
         android:fontFamily="@font/open_sans_bold"
         android:text="Fiesta de Cachimbos \nTeleco"
         android:textColor="#333333"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -47,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="12dp"
-        android:text=" Miercoles 5 de abril"
+        android:text="Miercoles 5 de abril"
         android:textColor="#828282"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,31 +109,33 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="331dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/nanum_brush_script"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/nanum_pen_script"
         android:gravity="center"
         android:text="Barra libre hasta las 9pm, juegos, bautizo y mas! \nAnima a tu grupo de amigos/as para que no se \nles pase esta gran aoprtunidad. \nRecuerda que si eres cachimbo de facultad 22-2,\n23-0 o 23-1 entras completamente gratis"
         android:textColor="#303030"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button6"
-        style="@android:style/Widget.Button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnComprar"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="8dp"
-        android:background="#FF5D57"
-        android:text="Button"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF5D57"
+        android:text="Comprar entrada"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
