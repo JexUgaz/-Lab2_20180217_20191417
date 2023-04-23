@@ -18,6 +18,9 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
+            android:name=".ConfirmationActivity"
+            android:exported="false" />
+        <activity
             android:parentActivityName=".MainActivity"
             android:name=".HomePageActivity"
             android:exported="false"
