@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnIniciarSesi"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="45dp"
@@ -70,13 +70,12 @@
         android:id="@+id/btnRegistrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="196dp"
         android:backgroundTint="#FF5D57"
         android:text="¿No tienes cuenta? Registrate aqui"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/btnIniciarSesi"
+        app:layout_constraintStart_toStartOf="@+id/btnIniciarSesi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

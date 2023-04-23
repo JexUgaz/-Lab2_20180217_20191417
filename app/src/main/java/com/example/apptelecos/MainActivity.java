@@ -21,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
             Intent in= new Intent(MainActivity.this,RegisterActivity.class);
             startActivity(in);
         });
+        binding.btnIniciarSesi.setOnClickListener(view->{
+            Intent in = new Intent(MainActivity.this,HomePageActivity.class);
+            startActivity(in);
+        });
     }
 }
