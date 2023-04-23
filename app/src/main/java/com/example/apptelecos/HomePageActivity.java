@@ -4,17 +4,21 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 
-public class HomePageActivity extends AppCompatActivity {
+import com.example.apptelecos.databinding.ActivityHomePageBinding;
 
+public class HomePageActivity extends AppCompatActivity {
+    ActivityHomePageBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        binding= ActivityHomePageBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         LayoutInflater inflater=(LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -28,6 +32,14 @@ public class HomePageActivity extends AppCompatActivity {
         imageView.setLayoutParams(params);
 
         getSupportActionBar().setCustomView(imageView);
+        binding.imagebtn1.setOnClickListener(view->{
+            Intent in= new Intent(HomePageActivity.this,DetailActivity.class);
+            startActivity(in);
+        });
+        binding.imageBtn2.setOnClickListener(view->{
+            Intent in= new Intent(HomePageActivity.this,DetailActivity.class);
+            startActivity(in);
+        });
         //getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Bienvenido Teleco" + "</font>"));
 
     }
