@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppTelecos</string>
+    <string name="register_msg"><![CDATA[¿Usted ha leído y acepta los términos y condiciones para el tratamiento de sus datos personales contenidos en la <b>Política de Privacidad Web</b>?]]></string>
+    <string name="resgister_msg1"><![CDATA[He leído y acepto los <b>Términos y Condiciones.</b>]]></string>
 </resources>
