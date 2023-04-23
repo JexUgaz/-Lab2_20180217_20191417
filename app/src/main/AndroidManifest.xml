@@ -18,7 +18,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".homePage.homePage"
+            android:name=".HomePageActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
