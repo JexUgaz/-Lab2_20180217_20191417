@@ -6,26 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".ConfirmationActivity">
 
+    <ImageButton
+        android:id="@+id/btnBack2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha_back" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="309dp"
-        android:layout_height="27dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="Elije tu asiento"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/btnBack2" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="300dp"
         android:layout_height="80dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="130dp"
         android:backgroundTint="#f7f9f8"
         android:checkable="true"
         android:clickable="true"
@@ -169,7 +182,7 @@
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/checkBox20"
+            android:id="@+id/checkBox3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"
@@ -177,7 +190,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSAsiento"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
